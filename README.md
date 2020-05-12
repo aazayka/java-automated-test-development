@@ -182,6 +182,8 @@ git clone --branch master --depth 1 https://github.com/ACCOUNT/java-automated-te
 - [ ] When developers analyse and refactor test codebase for maintainability
 - [ ] Then cross-team code review should state for tests maintainability
 
+## TDD intro (2)
+
 ## How cover web UI? (2.5)
 ### HTML overview
 - [ ] HTML structure
@@ -207,6 +209,9 @@ git clone --branch master --depth 1 https://github.com/ACCOUNT/java-automated-te
 - [ ] Given web UI
 - [ ] When developers cover main flow with UI test
 - [ ] Then cross-team code review should state for tests maintainability
+
+## Cucumber intro (1.5)
+## Allure intro (1)
 
 ## Buffer (2)
 - [ ] Daily retrospectives
