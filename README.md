@@ -75,7 +75,7 @@ git clone --branch master --depth 1 https://github.com/ACCOUNT/java-automated-te
 - [ ] Test = fixed flow
 - [ ] Test case = component specification
 ### Hands-on
-- [ ] Given legacy codebase with Client and SavingAccount domain types
+- [ ] Given legacy codebase with Client and SavingAccount com.acme.banking.dbo.domain types
 - [ ] When developers add guard clauses for creating Client and SavingAccount
 - [ ] And cover these components with maintainable autotests
 - [ ] Then public code review should state its maintainability
@@ -93,7 +93,7 @@ git clone --branch master --depth 1 https://github.com/ACCOUNT/java-automated-te
 - [ ] Add coverage tool dependency
 - [ ] Project test coverage reports
 ### Hands-on
-- [ ] Given legacy codebase with Client and SavingAccount domain types
+- [ ] Given legacy codebase with Client and SavingAccount com.acme.banking.dbo.domain types
 - [ ] And added covering test suite
 - [ ] When developers analyse coverage reprts
 - [ ] And develop new tests
@@ -118,7 +118,7 @@ git clone --branch master --depth 1 https://github.com/ACCOUNT/java-automated-te
 - [ ] [Categories](https://github.com/junit-team/junit4/wiki/Categories)
 - [ ] Build tool support for scoped tests run
 ### Hands-on
-- [ ] Given legacy codebase with Client and SavingAccount domain types
+- [ ] Given legacy codebase with Client and SavingAccount com.acme.banking.dbo.domain types
 - [ ] When developers add consistency rules for linking Client and SavingAccount
 - [ ] And cover these components with maintainable autotests
 - [ ] Then coverage for theses components should be 100%
