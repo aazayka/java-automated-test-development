@@ -8,6 +8,9 @@ public class SavingAccount implements Account {
     private double amount;
 
     public SavingAccount(UUID id, Client client, double amount) {
+        if (id == null) throw new IllegalArgumentException("ID shouldn't be null");
+        if (client == null) throw new IllegalArgumentException("Client shouldn't be null");
+
         this.id = id;
         this.client = client;
         this.amount = amount;
