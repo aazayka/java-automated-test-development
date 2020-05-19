@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
                 "pretty",
                 "json:target/cucumber-reports/cucumber.json",
                 "html:target/cucumber-reports/",
-                "junit:target/cucumber-reports/cucumber.xml"
+                "junit:target/cucumber-reports/cucumber.xml",
+                "io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"
         },
         strict = true
 )
