@@ -6,14 +6,15 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/bdd",
+        features = "classpath:bdd",
         glue = "com.acme.bank.dbo.bdd.glue",
         plugin = {
                 "pretty",
-                "json:target/cucumber.json",
-                "html:target/site/cucumber-pretty",
-                "html:target/cucumber-htmlreport"
-        }
+                "json:target/cucumber-reports/cucumber.json",
+                "html:target/cucumber-reports/",
+                "junit:target/cucumber-reports/cucumber.xml"
+        },
+        strict = true
 )
 public class CucumberTest {
 }
