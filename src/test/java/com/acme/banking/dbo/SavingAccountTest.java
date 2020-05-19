@@ -11,12 +11,12 @@ import static org.junit.Assert.fail;
 public class SavingAccountTest {
     @Test
     public void shouldNotCreateAccountWhenNullId() {
-        try {
             //region Given
             final UUID dummyUuid = null;
             final Client dummyClient = new Client(dummyUuid, null);
             //endregion
 
+        try {
             //region When
             new SavingAccount(null, dummyClient, 0);
             //endregion
