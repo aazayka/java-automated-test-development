@@ -1,4 +1,4 @@
-package com.acme.bank.dbo.bdd.glue;
+package com.acme.banking.dbo.bdd.glue;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.ru.Допустим;

@@ -1,4 +1,4 @@
-package com.acme.bank.dbo.bdd;
+package com.acme.banking.dbo.bdd;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "classpath:bdd",
-        glue = "com.acme.bank.dbo.bdd.glue",
+        glue = "com.acme.banking.dbo.bdd.glue",
         plugin = {
                 "pretty",
                 "json:target/cucumber-reports/cucumber.json",
