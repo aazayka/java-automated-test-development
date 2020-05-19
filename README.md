@@ -217,4 +217,6 @@ git clone --branch master --depth 1 https://github.com/ACCOUNT/java-automated-te
 - [ ] Daily retrospectives
 
 ## Webinar recordings
+- [12.05](https://us02web.zoom.us/rec/share/58pZI5PB_FpOa53Pt0P5AukKLLy5aaa8hCcbqfcNyHifs4MnaVroY9fhhCgIeLw)
 - [14.05](https://us02web.zoom.us/rec/share/5spZFJPdrVFIG5XG8myARKh-JIrhT6a8hCFKqfoEzEmAidcg5bLbEdKszmrwpxOP)
+- [19.05](https://us02web.zoom.us/rec/share/vOcpN-jZ8jlIUIntykTGfpNmR9rOT6a80yYc8qZYzUfFdlI8aKGKsYUuH08EHELO)
