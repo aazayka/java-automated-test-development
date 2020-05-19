@@ -9,20 +9,15 @@ import java.util.UUID;
 import static org.junit.Assert.fail;
 
 public class SavingAccountTest {
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void shouldNotCreateAccountWhenNullId() {
-            //region Given
-            final UUID dummyUuid = null;
-            final Client dummyClient = new Client(dummyUuid, null);
-            //endregion
+        //region Given
+        final UUID dummyUuid = UUID.randomUUID();
+        final Client dummyClient = new Client(dummyUuid, "name");
+        //endregion
 
-        try {
-            //region When
-            new SavingAccount(null, dummyClient, 0);
-            //endregion
-            fail();
-        } catch (IllegalArgumentException e) {
-
-        }
+        //region When
+        new SavingAccount(null, dummyClient, 0);
+        //endregion
     }
 }

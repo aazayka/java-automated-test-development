@@ -43,13 +43,13 @@ public class ArrayListTest { //SUT
         Assert.assertEquals(0.3, .1 + .2, 0.000001);
 
         assertThat(sut.size())
-                .isLessThan(0)
-                .isNegative()
+                .isLessThan(2)
+                .isPositive()
                 .isEqualTo(1);
         //endregion
     }
 
-    @Test(timeout = 5_000, expected = IllegalArgumentException.class)
+    @Test(timeout = 5_000)
     public void shouldBeingEmptyWhenCreated() {
         assertEquals(0, sut.size());
     }
