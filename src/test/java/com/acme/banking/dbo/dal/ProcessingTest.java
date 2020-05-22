@@ -62,7 +62,7 @@ public class ProcessingTest {
 
         sut.transfer(1., UUID.randomUUID(), UUID.randomUUID());
 
-        verify(accountMock1).withdraw(1.);
-        verify(accountMock2).deposit(1.);
+        verify(accountMock1, times(1)).withdraw(1.);
+        verify(accountMock2).deposit(anyDouble());
     }
 }
