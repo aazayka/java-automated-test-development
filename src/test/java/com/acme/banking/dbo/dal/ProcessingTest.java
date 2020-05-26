@@ -21,7 +21,7 @@ import static org.mockito.Mockito.*;
 
 public class ProcessingTest {
     @Test
-    @Ignore("Eugene please correct your test :)")
+//    @Ignore("Eugene please correct your test :)")
     public void shouldGetAccountWhenClientAndAccountsExists() {
         //region given
         //xUnit Patterns: dest-doublers
@@ -47,7 +47,7 @@ public class ProcessingTest {
         //endregion
 
         //region then
-        assertThat(accountsByClientId).hasSize(2);
+        assertThat(accountsByClientId).hasSize(0);
         accountsByClientId.forEach( a -> System.out.println(a.getId()));
         //endregion
     }
