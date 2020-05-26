@@ -1,7 +1,7 @@
 package com.acme.banking;
 
-import com.acme.banking.dbo.domain.ClientTest;
-import com.acme.banking.dbo.domain.SavingAccountTest;
+import com.acme.banking.dbo.ClientTest;
+import com.acme.banking.dbo.SavingAccountTest;
 import org.junit.experimental.categories.Categories;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
