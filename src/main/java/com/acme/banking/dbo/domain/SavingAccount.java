@@ -14,6 +14,7 @@ public class SavingAccount implements Account {
         this.id = id;
         this.client = client;
         this.amount = amount;
+        client.addAccount(this);
     }
 
     public Client getClient() {
@@ -32,5 +33,15 @@ public class SavingAccount implements Account {
     @Override
     public UUID getClientId() {
         return client.getId();
+    }
+
+    @Override
+    public void withdraw(double amount) {
+        //TODO
+    }
+
+    @Override
+    public void deposit(double amount) {
+        //TODO
     }
 }
