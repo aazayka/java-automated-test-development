@@ -3,23 +3,25 @@ package com.acme.banking.dbo.service;
 import com.acme.banking.dbo.dal.AccountRepository;
 import com.acme.banking.dbo.domain.Account;
 import com.acme.banking.dbo.domain.Cash;
-import com.acme.banking.dbo.domain.SavingAccount;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.UUID;
 
+import static org.springframework.util.StringUtils.isEmpty;
+
+@Service
 public class Processing {
+
+    @Autowired
     private AccountRepository accounts;
 
-    public Processing(AccountRepository accounts) {
-        this.accounts = accounts;
-    }
-
-    public UUID createClient(String name) {
-        return null;
-    }
+    @Autowired
+    private Cash cash;
 
     public Collection<Account> getAccountsByClientId(UUID clientId) {
+        if (clientId == null || isEmpty(clientId)) throw new IllegalArgumentException("Please provide ClientId");
         return accounts.findAccountsByClientId(clientId);
     }
 
@@ -31,7 +33,6 @@ public class Processing {
     }
 
     public void cash(double amount, UUID fromAccountId) {
-
-        Cash.log(amount, fromAccountId);
+        cash.log(amount, fromAccountId);
     }
 }

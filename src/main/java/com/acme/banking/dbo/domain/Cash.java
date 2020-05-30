@@ -2,8 +2,8 @@ package com.acme.banking.dbo.domain;
 
 import java.util.UUID;
 
-public class Cash {
-    public static void log(double amount, UUID fromAccountId) {
-
+public interface Cash {
+    default void log(double amount, UUID fromAccountId) {
+        System.out.println("Денежки тютю");
     }
 }
