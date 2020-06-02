@@ -48,8 +48,11 @@ public class ClientTest {
     @Category(PositiveTest.class)
     @Test
     public void shouldSavePropertiesWhenCreated() {
-        assertThat(sut.getId(), equalTo(dummyStubId));
-        assertThat(sut.getName(), equalTo(dummyClientName));
+        assertThat(sut,
+                allOf(
+                        hasProperty("id", equalTo(dummyStubId)),
+                        hasProperty("name", equalTo(dummyClientName)))
+        );
     }
 
     @Category(PositiveTest.class)
