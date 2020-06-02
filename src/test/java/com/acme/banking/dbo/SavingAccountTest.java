@@ -9,10 +9,7 @@ import org.junit.experimental.categories.Category;
 
 import java.util.UUID;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.Matchers.hasItem;
-import static org.hamcrest.Matchers.iterableWithSize;
-import static org.junit.Assert.assertEquals;
+import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 
 public class SavingAccountTest {
@@ -36,10 +33,13 @@ public class SavingAccountTest {
     @Category(PositiveTest.class)
     @Test
     public void shouldSavePropertiesWhenCreated() {
-        assertThat(sut.getId(), equalTo(dummyStubId));
-        assertThat(sut.getClient(), equalTo(dummyClient));
-        assertThat(sut.getClientId(), equalTo(dummyClientId));
-        assertEquals(sut.getAmount(), dummyAmt, 0.0001);
+        assertThat(sut,
+                allOf(
+                        hasProperty("id", is(dummyStubId)),
+                        hasProperty("client", is(dummyClient)),
+                        hasProperty("clientId", is(dummyClientId)),
+                        hasProperty("amount", is(dummyAmt))
+                ));
 
         assertThat(dummyClient.getAccounts(),
                 Matchers.allOf(
